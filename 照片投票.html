@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>部门照片投票活动</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: space-around; }
+    .photo { margin: 10px; border: 1px solid #ccc; border-radius: 5px; overflow: hidden; }
+    .photo img { width: 300px; height: 200px; object-fit: cover; transition: transform .2s; }
+    .photo:hover img { transform: scale(1.1); }
+    .photo p { text-align: center; margin: 10px 0; }
+    button { display: block; width: 100%; padding: 8px; border: none; background-color: #4CAF50; color: white; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+    .header { text-align: center; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>部门照片投票活动</h1>
+    <p>请为你最喜欢的照片投票，每人最多可选三幅。</p>
+</div>
+
+<div class="gallery">
+    <!-- 示例照片1 -->
+    <div class="photo">
+        <img src="example-photo1.jpg" alt="照片1">
+        <p>照片1 - 摄影师姓名</p>
+        <button onclick="alert('感谢您的投票！')">投票</button>
+    </div>
+    <!-- 示例照片2 -->
+    <div class="photo">
+        <img src="example-photo2.jpg" alt="照片2">
+        <p>照片2 - 摄影师姓名</p>
+        <button onclick="alert('感谢您的投票！')">投票</button>
+    </div>
+    <!-- 示例照片3 -->
+    <div class="photo">
+        <img src="example-photo3.jpg" alt="照片3">
+        <p>照片3 - 摄影师姓名</p>
+        <button onclick="alert('感谢您的投票！')">投票</button>
+    </div>
+    <!-- 更多照片可以继续添加 -->
+</div>
+
+</body>
+</html>
